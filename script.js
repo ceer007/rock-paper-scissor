@@ -9,12 +9,12 @@ let compScore = 0;
 let playerScore = 0;
 
 function playRound(playerPick, compPick) {
-  if (computerPlay() === 'rock' && compPick === 'rock' && playerPick === 'scissor' || 
-      computerPlay() === 'scissor' && compPick === 'scissor' && playerPick === 'paper' ||
-      computerPlay() === 'paper' && compPick === 'paper' && playerPick === 'rock') {compScore = ++compScore;
+  if (compPick === 'rock' && playerPick === 'scissor' || 
+      compPick === 'scissor' && playerPick === 'paper' ||
+      compPick === 'paper' && playerPick === 'rock') {compScore = ++compScore;
     return(`You pick ${playerPick}, computer pick ${compPick}, You lose!!!`)}
     else if (compPick === playerPick) {return(`You pick ${playerPick}, Computer pick ${compPick}. Tied!!!`)}
-    else {playerScore = ++playerScore; return(`You pick ${playerPick}, computer pick ${compPick}, You Win!!!`)}
+    else {playerScore = ++playerScore;return(`You pick ${playerPick}, computer pick ${compPick}, You Win!!!`)};
   };
   
 const playerPick = 'rock'.toLowerCase();
