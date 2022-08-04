@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-
-   
-</body>
-<script src="script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ROCK PAPER SCISSOR</title>
+    </head>
+    <body>
+        <div class="title">
+            <span id="rock">ROCK</span>
+            <span id="paper">PAPER</span>
+            <span id="scissor">SCISSOR</span>
+        </div>
+        <div class="content">
+            <h2 class="title">WELCOME TO
+                <span id="rock">ROCK</span>
+                <span id="paper">PAPER</span>
+                <span id="scissor">SCISSOR</span>
+                GAME!!!</h2>
+            <p>You will be playing againts computer whoever score 5 points first win the game</p>
+            <h2>PLEASE SELECT YOUR WEAPON</h2>
+            <div class="img">
+                <img src="images/ROCK.png" class="player-selection" id="ROCK">
+                <img src="images/PAPER.png" class="player-selection" id="PAPER">
+                <img src="images/SCISSOR.png" class="player-selection" id="SCISSOR">
+            </div>
+            <div class="round">
+                <div class="player-score">
+                    <h2 id="scissor">PLAYER</h2>
+                    <img src="images/default.png" class="img-player">
+                    <p class="player" id="scissor"></p>
+                </div>
+                <h1 class="info" id="default"></h1>
+                <div class="computer-score">
+                    <h2 id="paper">COMP</h2>
+                    <img src="images/default.png" class="img-computer">
+                    <p class="computer" id="paper"></p>
+                </div>
+            </div>
+            <div class="result"></div>
+        </div>
+        <footer>Imad &copy; 2022</footer>
+        <script src="rps.js"></script>
+    </body>
 </html>
