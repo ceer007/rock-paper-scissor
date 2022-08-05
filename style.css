@@ -1,3 +1,7 @@
+* {
+    flex-wrap: wrap;
+}
+
 body {
     display: flex;
     margin: 0;
@@ -8,6 +12,7 @@ body {
     flex-direction: column;
     font-family: 'Roboto', Tahoma, sans-serif;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 div.title {
@@ -20,6 +25,7 @@ div.title {
     font-size: 48px;
     font-weight: 900;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 #rock {
@@ -41,12 +47,13 @@ color: #B82020;
     align-items: center;
     background-color: rgb(25, 25, 25);
     color: aliceblue;
-
+    flex-wrap: wrap;
 }
 
 .img {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .img > img {
@@ -63,10 +70,12 @@ color: #B82020;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .round img {
     width: 100px;
+    flex-wrap: wrap;
 }
 
 p.player,
